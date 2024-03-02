@@ -61,4 +61,10 @@ class MainTest {
   }
 
   // TODO: Create your test(s) below. /////////////////////////////////////////
+
+    @Test
+    void createBigrams(){
+            //this is the thing i don't understand at all. I don't know what the bug is
+            //therefore i don't know how to fix it. 
+    }
 }
