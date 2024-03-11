@@ -4,6 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -62,9 +63,17 @@ class MainTest {
 
   // TODO: Create your test(s) below. /////////////////////////////////////////
 
+
     @Test
-    void createBigrams(){
-            //this is the thing i don't understand at all. I don't know what the bug is
-            //therefore i don't know how to fix it. 
+    void getId() {
+
+        assertDoesNotThrow( () ->{
+            Connection db = Main.createConnection();
+            //var getId = new Main.getId();
+            int aWord = Main.getId(db, "friend's");
+
+        } );
+
+
     }
 }
